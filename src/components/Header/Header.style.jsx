@@ -9,7 +9,7 @@ export const Header = styled.header`
   top: 0;
   width: 100%;
   height: 58px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   z-index: 10;
 
@@ -20,6 +20,7 @@ export const Header = styled.header`
     height: 50px;
   }
 `;
+//background-color: rgba(0, 0, 0, 0.6);
 
 export const Inner = styled.div`
   display: flex;
@@ -33,7 +34,7 @@ export const Inner = styled.div`
 export const Logo = styled.a`
   font-size: 28px;
   font-weight: 700;
-  color: ${Colors.white};
+  color: ${Colors.black};
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 26px;
@@ -60,13 +61,13 @@ export const Nav = styled.nav`
 
 export const NavItem = styled.a`
   font-size: 16px;
-  color: ${Colors.lightGrey};
+  color: ${Colors.black};
   transition:
     font-weight 0.2s ease,
     color 0.2s ease;
 
   & > strong {
-    text-decoration: underline solid ${Colors.lightGrey};
+    text-decoration: underline solid ${Colors.black};
   }
 
   @media (max-width: ${BREAKPOINTS[1]}px) {

@@ -36,7 +36,7 @@ const ProjectPage = () => {
   };
 
   const handleFormClick = () => {
-    window.location.href = 'https://forms.gle/V4Lj6G5xKGgUpfkT7';
+    window.location.href = 'https://forms.gle/MxUfiHmY3VwbXix8A';
   };
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const ProjectPage = () => {
     <PageLayout
       header={<Header />}
       footer={<Footer />}
-      background={`linear-gradient(180deg, ${Colors.skyblue} 0%, ${Colors.blue} 55.73%, #0D0D0D 100%)`}
+      background={`linear-gradient(180deg, ${Colors.skyblue} 0%, ${Colors.blue} 55.73%,rgb(255, 255, 255) 100%)`}
     >
       <S.Inner>
         {projectData.youtubeVideoId ? (
@@ -186,7 +186,7 @@ const ProjectPage = () => {
                 &lt; {previousProject.name}
               </S.PreviousButton>
             )}
-            {nextProject && currentId !== 8 && (
+            {nextProject && currentId !== 12 && (
               <S.NextButton
                 onClick={handleNextButtonClick}
                 disabled={!nextProject}

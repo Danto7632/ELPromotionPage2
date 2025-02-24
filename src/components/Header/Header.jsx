@@ -24,7 +24,7 @@ const Header = () => {
 
   // 기존에 새 탭을 여는 방식에서 같은 창에서 열도록 변경
   const handleFormClick = () => {
-    window.location.href = 'https://forms.gle/V4Lj6G5xKGgUpfkT7';
+    window.location.href = 'https://forms.gle/MxUfiHmY3VwbXix8A';
   };
 
   return (
@@ -32,6 +32,9 @@ const Header = () => {
       <S.Inner>
         <S.Logo href="/">EL</S.Logo>
         <S.Nav>
+          <S.NavItem onClick={() => handleNavItemClick('/', 'prize')}>
+            수상 실적
+          </S.NavItem>
           <S.NavItem onClick={() => handleNavItemClick('/', 'aboutEL')}>
             EL 소개
           </S.NavItem>

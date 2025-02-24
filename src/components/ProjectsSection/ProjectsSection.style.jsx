@@ -4,7 +4,7 @@ import { BREAKPOINTS } from '../../styles';
 
 export const Section = styled.section`
   position: relative;
-  padding: 200px 0;
+  padding: 100px 0;
 `;
 
 export const Background = styled.div`
@@ -21,30 +21,28 @@ export const Background = styled.div`
 
 export const TopBackground = styled(Background)`
   top: 0;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to bottom,
-      rgba(13, 13, 13, 1) 0%,
+      rgba(13, 13, 13, 0) 0%,
       rgba(13, 13, 13, 0.5) 10%,
-      rgba(13, 13, 13, 0) 30%,
-      rgba(13, 13, 13, 0) 70%,
+      rgba(13, 13, 13, 1) 30%,
+      rgba(13, 13, 13, 1) 70%,
       rgba(13, 13, 13, 0.5) 80%,
-      rgba(13, 13, 13, 1) 100%
-    ),
-    url('/images/home/img-projects-section-top-background.png');
+      rgba(13, 13, 13, 0) 100%
+    );
   background-size: cover;
 `;
 
 export const BottomBackground = styled(Background)`
   bottom: 0;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to bottom,
-      rgba(13, 13, 13, 1) 0%,
-      rgba(13, 13, 13, 0.2) 40%,
+      rgba(13, 13, 13, 0) 0%,
+      rgba(13, 13, 13, 0) 40%,
       rgba(13, 13, 13, 0) 70%,
-      rgba(13, 13, 13, 0) 80%,
-      rgba(13, 13, 13, 0) 100%
-    ),
-    url('/images/home/img-projects-section-bottom-background.png');
+      rgba(13, 13, 13, 0.2) 80%,
+      rgba(13, 13, 13, 1) 100%
+    );
 `;
 
 export const SectionInner = styled.div`
@@ -61,7 +59,7 @@ export const SectionTitle = styled.h2`
   font-weight: 700;
   text-align: center;
   line-height: 1.3;
-  color: ${Colors.white};
+  color: ${Colors.black};
   white-space: pre-wrap;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -98,12 +96,12 @@ export const SectionNavItem = styled.a`
   width: 100%;
   padding: 14px 40px;
   border-radius: 20px;
-  background-color: #ffffff;
-  opacity: 0.7; /* 버튼의 기본 투명도 설정 */
+  background-color:rgb(111, 45, 98);
+  opacity: 0.6; /* 버튼의 기본 투명도 설정 */
   transition: opacity 0.3s; /* 마우스 호버 시 투명도 전환을 부드럽게 만듭니다. */
 
   & > span {
-    color: #333d4b;
+    color:rgb(255, 255, 255);
     font-size: 22px;
     font-weight: 600;
     text-align: center;
@@ -133,15 +131,20 @@ export const SectionNavItem = styled.a`
 `;
 
 export const SectionEnd = styled.h1`
-  margin-top: 200px;
-  font-size: 52px;
+  margin-top: 150px;
+  font-size: 70px;
   font-weight: 700;
   text-align: center;
   line-height: 1.3;
   white-space: pre-wrap;
+
+  @media (max-width: 700px) {
+    margin-bottom: 18px;
+    margin-top: 80px;
+  }
   
-  text-decoration: underline solid ${Colors.crowdflower};
-  color: ${Colors.crowdflower};
+  text-decoration: underline solid ${Colors.blue};
+  color: ${Colors.blue};
   cursor: pointer; /* 마우스 커서 손 모양으로 변경 */
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -157,13 +160,13 @@ export const SectionEnd = styled.h1`
 export const ProjectCategoryList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 90px;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    gap: 96px;
+    gap: 70px;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    gap: 60px;
+    gap: 50px;
   }
 `;
 
@@ -177,7 +180,7 @@ export const ProjectCategoryItemTitle = styled.h3`
   font-weight: 600;
   text-align: center;
   line-height: 1.3;
-  color: ${Colors.white};
+  color: ${Colors.black};
   white-space: pre-wrap;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -220,13 +223,14 @@ export const ProjectCategoryItemLink = styled.a`
   flex-direction: column;
   width: 100%;
   border-radius: 20px;
-  border: 1px solid #fff;
+  border: 2px solid #000;
   overflow: hidden;
 `;
 
 export const ProjectImageWrapper = styled.div`
   width: 100%;
   overflow: hidden;
+  background-color:rgb(0, 0, 0);
 `;
 
 export const ProjectImage = styled.img`
@@ -238,16 +242,17 @@ export const ProjectContentWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  background-color: #140b24;
+  background-color:rgb(255, 255, 255);
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     padding: 14px;
   }
 `;
+//background-color: #140b24;
 
 export const ProjectName = styled.h4`
   margin-bottom: 20px;
-  color: #ffffff;
+  color:rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 600;
   line-height: 1.3;
@@ -265,7 +270,7 @@ export const ProjectName = styled.h4`
 export const ProjectSummary = styled.p`
   font-size: 18px;
   line-height: 1.3;
-  color: ${Colors.lightGrey};
+  color: ${Colors.grey};
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     font-size: 16px;
@@ -279,7 +284,7 @@ export const InquiryButton = styled.div`
   width: 200px;
   margin: 20px auto 0 auto; /* 중앙 배치 (상단 여백 20px) */
   padding: 10px 15px; /* 크기 조정 */
-  background-color: ${Colors.crowdflower};
+  background-color: rgb(230, 238, 84);
   color: ${Colors.white};
   font-size: 20px; /* 텍스트 크기 조정 */
   text-align: center;

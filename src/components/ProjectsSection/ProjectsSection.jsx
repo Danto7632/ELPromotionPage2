@@ -14,7 +14,7 @@ const ProjectsSection = () => {
   };
 
   const handleFormClick = () => {
-    window.location.href = 'https://forms.gle/V4Lj6G5xKGgUpfkT7';
+    window.location.href = 'https://forms.gle/MxUfiHmY3VwbXix8A';
   };
 
   const handleInquiryClick = () => {
@@ -70,8 +70,8 @@ const ProjectsSection = () => {
       </S.SectionInner>
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
-        <S.SectionEnd onClick={handleFormClick}>EL 지원하러가기</S.SectionEnd>
-        <S.InquiryButton onClick={handleInquiryClick}>EL 카카오톡 문의방</S.InquiryButton>
+        <S.SectionEnd onClick={handleFormClick}>"EL 지원하러가기"</S.SectionEnd>
+        <S.InquiryButton onClick={handleInquiryClick}>EL 카카오톡 문의</S.InquiryButton>
       </AnimationOnScroll>
     </S.Section>
   );

@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
+  background:white;
 `;
 
 export const SectionInner = styled.div`
@@ -21,7 +22,7 @@ export const SectionInner = styled.div`
 export const MainSection = styled.section`
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/images/home/img-home-main-background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,26 +73,25 @@ export const MainSectionSubTitle = styled.h2`
 export const MessageSection = styled.section`
   background: linear-gradient(
     180deg,
-    ${Colors.blue} 0%,
-    ${Colors.crowdflower} 33.33%,
-    ${Colors.blue} 66.67%,
-    #0d0d0d 100%
+    ${Colors.black} 0%,
+    ${Colors.white} 35%,
+    ${Colors.black} 70%,
+    ${Colors.white} 100%
   );
 
-  padding: 200px 0;
-
-  @media (max-width: ${BREAKPOINTS[1]}px) {
-    padding: 160px 0;
-  }
-  @media (max-width: ${BREAKPOINTS[0]}px) {
-    padding: 80px 0;
-  }
+    min-height: 80vh;
 `;
 
 export const MessageSectionInner = styled(SectionInner)`
-  height: 100%;
+  height: 65%;
   justify-content: center;
   gap: 40px;
+  @media (max-width: ${BREAKPOINTS[1]}px) {
+    height: 70%;
+  }
+  @media (max-width: ${BREAKPOINTS[0]}px) {
+    height: 70%;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -100,7 +100,7 @@ export const SectionTitle = styled.h2`
   font-weight: 700;
   text-align: center;
   line-height: 1.3;
-  color: ${Colors.white};
+  color: ${Colors.black};
   white-space: pre-wrap;
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
@@ -154,7 +154,7 @@ export const SectionDescription = styled.p`
 
 export const AboutELSection = styled.section`
   margin: 200px 0;
-  background: ${Colors.black};
+  background: ${Colors.white};
 
   @media (max-width: ${BREAKPOINTS[1]}px) {
     margin: 160px 0;
@@ -176,7 +176,7 @@ export const DevtiSection = styled.section`
   height: fit-content;
   padding: 0 20px;
   margin: 40px 0;
-  background: ${Colors.black};
+  background: ${Colors.white};
 `;
 
 export const DevtiCardSection = styled.div`

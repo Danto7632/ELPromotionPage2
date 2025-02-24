@@ -5,7 +5,7 @@ export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 28px;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #191f28;
 `;
 
