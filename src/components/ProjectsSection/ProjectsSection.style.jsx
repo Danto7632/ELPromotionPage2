@@ -12,7 +12,7 @@ export const Background = styled.div`
   position: absolute;
   opacity: 0.3;
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-position: top 50% left 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,12 +24,34 @@ export const TopBackground = styled(Background)`
   background: linear-gradient(
       to bottom,
       rgba(13, 13, 13, 0) 0%,
-      rgba(13, 13, 13, 0.5) 10%,
-      rgba(13, 13, 13, 1) 30%,
-      rgba(13, 13, 13, 1) 70%,
-      rgba(13, 13, 13, 0.5) 80%,
+      rgba(4, 0, 255, 0) 10%,
+      ${Colors.darkblue} 45%,
+      rgb(4, 0, 255, 0) 70%,
+      rgba(4, 0, 255, 0) 80%,
       rgba(13, 13, 13, 0) 100%
     );
+    @media (max-width: ${BREAKPOINTS[1]}px) {
+      background: linear-gradient(
+      to bottom,
+      rgba(13, 13, 13, 0) 0%,
+      rgba(4, 0, 255, 0) 10%,
+      ${Colors.darkblue} 40%,
+      rgb(4, 0, 255, 0) 70%,
+      rgba(4, 0, 255, 0) 80%,
+      rgba(13, 13, 13, 0) 100%
+    );
+    }
+    @media (max-width: ${BREAKPOINTS[0]}px) {
+      background: linear-gradient(
+      to bottom,
+      rgba(13, 13, 13, 0) 0%,
+      rgba(4, 0, 255, 0) 10%,
+      ${Colors.darkblue} 40%,
+      rgb(4, 0, 255, 0) 70%,
+      rgba(4, 0, 255, 0) 80%,
+      rgba(13, 13, 13, 0) 100%
+    );
+    }
   background-size: cover;
 `;
 

@@ -22,7 +22,7 @@ export const SectionInner = styled.div`
 export const MainSection = styled.section`
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 0, 255, 0.2)),
     url('/images/home/img-home-main-background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,24 +73,23 @@ export const MainSectionSubTitle = styled.h2`
 export const MessageSection = styled.section`
   background: linear-gradient(
     180deg,
-    ${Colors.black} 0%,
+    ${Colors.darkblue} 0%,
     ${Colors.white} 35%,
-    ${Colors.black} 70%,
     ${Colors.white} 100%
   );
 
-    min-height: 80vh;
+    min-height: 50vh;
 `;
 
 export const MessageSectionInner = styled(SectionInner)`
-  height: 65%;
+  height: 130%;
   justify-content: center;
   gap: 40px;
   @media (max-width: ${BREAKPOINTS[1]}px) {
-    height: 70%;
+    height: 130%;
   }
   @media (max-width: ${BREAKPOINTS[0]}px) {
-    height: 70%;
+    height: 130%;
   }
 `;
 

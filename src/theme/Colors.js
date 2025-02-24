@@ -7,7 +7,8 @@ const Colors = {
   lightGrey: '#CCCCCC',
   blue: '#0055ff',
   skyblue: '#79EDFF',
-  crowdflower: '#1EF3E7'
+  crowdflower: '#1EF3E7',
+  darkblue: '#00008B'
 };
 
 export default Colors;

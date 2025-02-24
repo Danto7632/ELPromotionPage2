@@ -25,7 +25,7 @@ section.visible {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(to bottom, transparent, #6e45e2, transparent);
+    background: linear-gradient(to bottom, transparent, #2c19ff, transparent);
 }
 
 .timeline-item {
@@ -54,7 +54,7 @@ section.visible {
     position: absolute;
     left: -120px;
     top: 20px;
-    background: #6e45e2;
+    background: #2c19ff;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -76,7 +76,7 @@ section.visible {
 }
 
 .achievement h3 {
-    color: #6e45e2;
+    color: #2c19ff;
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
