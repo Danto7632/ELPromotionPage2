@@ -96,7 +96,7 @@ export const SectionNavItem = styled.a`
   width: 100%;
   padding: 14px 40px;
   border-radius: 20px;
-  background-color:rgb(111, 45, 98);
+  background-color:rgb(0, 0, 0);
   opacity: 0.6; /* 버튼의 기본 투명도 설정 */
   transition: opacity 0.3s; /* 마우스 호버 시 투명도 전환을 부드럽게 만듭니다. */
 
