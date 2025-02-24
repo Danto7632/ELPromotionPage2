@@ -7,7 +7,7 @@ export default function DevtiCard() {
   const [isHoveredCon2, setIsHoveredCon2] = useState(false);
 
   const handleCardClick = () => {
-    window.location.href = 'https://6yoon.github.io/'; // 클릭 시 이동할 링크
+    window.location.href = 'https://6yoon.github.io/DevTI/'; // 클릭 시 이동할 링크
   };
 
   return (

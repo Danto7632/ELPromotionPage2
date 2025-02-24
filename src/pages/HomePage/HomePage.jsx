@@ -164,8 +164,7 @@ const HomePage = () => {
               <S.SectionTitle>EL 소개</S.SectionTitle>
               <S.SectionDescription>
                 동아리 EL에서는 앱, 웹, 게임, 보안, AI 등
-                <br />다양한 분야의 개발도구와 프레임워크를 활용한
-                <br />프로젝트를 진행하며 개발 역량과 협업 능력을 강화하는 활동을 하고 있습니다.
+                <br />다양한 분야의 개발도구와 프레임워크를 활용한 프로젝트를 진행하며 개발 역량과 협업 능력을 강화하는 활동을 하고 있습니다.
                 <br />
                 <br />또한, 활발한 소통과 피드백을 통해 개인의 성장과 공동체 발전을 지원합니다.
               </S.SectionDescription>
