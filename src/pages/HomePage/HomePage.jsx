@@ -92,7 +92,7 @@ const HomePage = () => {
                     <p>🏆🥉 스마트 SW 개발 경진대회 - 최우수상 &amp; 장려상</p>
                     <p className="detail">ㄴ AI 기반 집필 및 협업 지원 E-book 에디터 LunaVel</p>
                     <p>🥈🥉 컴퓨터공학부 프로젝트 경진대회 - 우수상 &amp; 장려상</p>
-                    <p className="detail">ㄴ ???</p>
+                    <p className="detail">ㄴ 화재 대처 요령 습득을 위한 3D 시뮬레이션 게임 개발</p>
                   </div>
                   <div className="achievement">
                     <h3>11월</h3>
