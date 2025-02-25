@@ -276,7 +276,7 @@ export const ACTIVITY_LIST = [
   },
   {
     id: 12,
-    name: 'EXPO 프로젝트(14인) 최종결과 - 대상',
+    name: 'EXPO 프로젝트(14인) 최종결과',
     category: CATEGORIES.PROJECT,
     imageUrl: '/images/thumbnail/img-thumbnail-12.png',
     youtubeVideoId: 'Lk9xxMedmyE',
