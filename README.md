@@ -1,1 +1,1 @@
-[안녕하세요](https://el-promotion-page.vercel.app/)
+[안녕하세요](https://el-promotion-page2.vercel.app/)
